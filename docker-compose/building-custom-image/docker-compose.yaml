@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: compose-custom-image
+    ports:
+      - 8000:80
